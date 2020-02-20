@@ -1,0 +1,5 @@
+.home {
+  background: url("../images/wallpaper.jpg");
+  height: calc(100vh - 143px);
+  background-size: cover;
+}

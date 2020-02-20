@@ -1,0 +1,41 @@
+.backgroundCharacterList {
+  background: url(../images/backgroundCharecter.jpg);
+}
+.inputSearch {
+  justify-content: center;
+  padding-top: 50px;
+  display: flex;
+}
+
+.inputSearch input {
+  border-radius: 15px;
+  border: none;
+  margin-right: 31px;
+  height: 53px;
+  width: 428px;
+  background-color: #ee171f;
+  opacity: 0.4;
+}
+
+.inputSearch button {
+  width: 135px;
+  border: none;
+  background-color: #ee171f;
+  border-radius: 100px;
+  color: white;
+}
+
+.charactersTile {
+  margin: auto;
+  margin-right: 42px;
+  padding-top: 61px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 61px;
+}
+
+h4 {
+  color: #1b2936;
+  margin-top: 36px;
+}

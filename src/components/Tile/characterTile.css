@@ -1,0 +1,24 @@
+.characterTile {
+  display: flex;
+  margin-bottom: 48px;
+  flex-direction: column;
+  border: 4mm ridge #530e10;
+  border-radius: 100%;
+  align-items: center;
+  background: linear-gradient(45deg, black, #ee171f);
+  height: 274px;
+  width: 303px;
+  margin: 40px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.characterTile img {
+  border-radius: 100%;
+  height: 120px;
+  width: 100px;
+  object-fit: cover;
+  height: 159px;
+  width: 125px;
+}

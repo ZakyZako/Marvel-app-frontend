@@ -1,0 +1,31 @@
+.Header {
+  background-color: #ee171f;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 18px solid black;
+  height: 125px;
+}
+.flex {
+  display: flex;
+}
+.Logo-Marvel {
+  height: 100px;
+  width: 300px;
+  margin: 15px;
+}
+
+.button {
+  color: white;
+  border: none;
+  height: 45px;
+  width: 191px;
+  border-radius: 81px;
+  margin-top: 65px;
+  margin-right: 12px;
+  background: linear-gradient(45deg, black, transparent);
+}
+
+.pointeur {
+  cursor: pointer;
+}
