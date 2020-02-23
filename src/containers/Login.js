@@ -4,6 +4,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import "./login.css";
 import { Link } from "react-router-dom";
+import "./login.css";
 
 const Login = props => {
   const [email, setEmail] = useState("");
@@ -21,6 +22,9 @@ const Login = props => {
 
       if (response.data.token !== undefined) {
         const token = response.data.token;
+        const id = response.data._id;
+        console.log("idddddD", id);
+        Cookies.set("userId", id);
         Cookies.set("userToken", token, { expires: 10 });
         props.setUser({ token: token });
         history.push("/");
@@ -33,7 +37,7 @@ const Login = props => {
   };
 
   return (
-    <div className="FormCenter">
+    <div className="formCenter">
       <div className="LoginForm">
         <form
           className="form"

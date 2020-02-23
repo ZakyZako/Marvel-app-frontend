@@ -1,0 +1,6 @@
+.formCenter {
+  padding-top: 163px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

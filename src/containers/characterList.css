@@ -1,10 +1,16 @@
 .backgroundCharacterList {
-  background: url(../images/backgroundCharecter.jpg);
+  position: relative;
 }
+
 .inputSearch {
   justify-content: center;
   padding-top: 50px;
   display: flex;
+  position: fixed;
+  top: 125px;
+  left: calc(50% - 297px);
+  font-size: 18px;
+  padding-left: 20px;
 }
 
 .inputSearch input {
@@ -13,8 +19,8 @@
   margin-right: 31px;
   height: 53px;
   width: 428px;
-  background-color: #ee171f;
-  opacity: 0.4;
+  background-color: black;
+  color: white;
 }
 
 .inputSearch button {
@@ -32,10 +38,22 @@
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 61px;
+  padding-top: 200px;
 }
 
 h4 {
   color: #1b2936;
   margin-top: 36px;
+}
+
+.backgroundCharacterListCenter {
+  top: 143px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border: 0;
+  height: 100vh;
+  position: fixed;
+  background-image: url("./../images/captain-america.jpg");
+  background-position: center;
 }

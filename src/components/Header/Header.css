@@ -5,6 +5,9 @@
   width: 100%;
   border-bottom: 18px solid black;
   height: 125px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 .flex {
   display: flex;
@@ -16,8 +19,9 @@
 }
 
 .button {
+  border: 2px solid white;
   color: white;
-  border: none;
+
   height: 45px;
   width: 191px;
   border-radius: 81px;

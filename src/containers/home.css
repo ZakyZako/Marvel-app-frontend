@@ -1,5 +1,11 @@
 .home {
+  top: 143px;
+  left: -75px;
+  right: 0;
+  z-index: -1;
+  border: 0;
+  height: 100vh;
+  position: fixed;
   background: url("../images/wallpaper.jpg");
-  height: calc(100vh - 143px);
   background-size: cover;
 }

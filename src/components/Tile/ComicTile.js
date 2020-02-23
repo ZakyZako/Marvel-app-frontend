@@ -4,12 +4,17 @@ import "./comicTile.css";
 const CharacterTile = props => {
   return (
     <div>
-      <div>
-        <h2>{props.title}</h2>
-        <p>{props.desc}</p>
-      </div>
-      <div>
-        <img src={props.imgPath} alt="logo" />
+      <div className="comicTile">
+        <div>
+          <h2>{props.title}</h2>
+        </div>
+        <div>
+          <img src={props.imgPath} alt="logo" />
+        </div>
+        <div>
+          {" "}
+          <p>{props.desc}</p>
+        </div>
       </div>
     </div>
   );

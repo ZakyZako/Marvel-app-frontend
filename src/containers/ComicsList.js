@@ -19,16 +19,17 @@ const ComicsList = () => {
 
   return (
     <div className="backgroundComicList">
-      <div className="backgroundComicsListCenter">
-        <div className="inputSearch">
-          <input
-            type="text"
-            value={search}
-            onChange={event => {
-              setSearch(event.target.value);
-            }}
-          />
-        </div>
+      <div className="backgroundComicListCenter"></div>
+      <div className="inputSearch">
+        <input
+          type="text"
+          placeholder="Cherche ton comic !"
+          value={search}
+          onChange={event => {
+            setSearch(event.target.value);
+          }}
+        />
+
         <button
           onClick={async event => {
             const response = await axios.get(
@@ -40,14 +41,15 @@ const ComicsList = () => {
           Rechercher
         </button>
       </div>
-      <div className="comicsTile">
+
+      <div className="comicsList">
         {data.map((comic, index) => {
           return (
             <ComicTile
               key={index}
               imgPath={comic.imgPath}
               title={comic.title}
-              desc={comic.desc}
+              // desc={comic.desc}
             />
           );
         })}

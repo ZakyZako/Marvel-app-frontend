@@ -54,7 +54,7 @@ const SignUp = props => {
           inscription(event);
         }}
       >
-        <div className="droite">
+        <div className="formCenter">
           <div>
             <h2>Créer un compte</h2>
           </div>
