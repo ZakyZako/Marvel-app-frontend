@@ -1,0 +1,39 @@
+.containerEntete {
+  height: 600px;
+  width: 1001.5px;
+  background-color: yellow;
+  color: white;
+  display: flex;
+}
+.imgDescCharacterPage {
+  display: flex;
+  box-shadow: 9px 6px 7px 4px rgba(0, 0, 0, 0.75);
+  background-color: #0e0d0d;
+}
+
+.containerCharacterPage {
+  margin: 175px auto;
+  width: 50%;
+}
+
+.containerNameDesc {
+  background-color: #0e0d0d;
+  color: white;
+  border-radius: 5px;
+  margin-left: 12px;
+}
+.nameCharacterPage {
+  margin: 30px auto 40px;
+  font-size: 40px;
+  font-weight: 800;
+}
+.containerDesc {
+  margin-left: 21px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.titleContainerComics {
+  display: flex;
+  justify-content: center;
+}

@@ -1,9 +1,8 @@
 .Header {
-  background-color: #ee171f;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border-bottom: 18px solid black;
+  border-bottom: 1px solid white;
   height: 125px;
   position: fixed;
   top: 0;
@@ -11,6 +10,11 @@
 }
 .flex {
   display: flex;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: inherit;
+  background-color: #202020;
 }
 .Logo-Marvel {
   height: 100px;
@@ -19,17 +23,31 @@
 }
 
 .button {
-  border: 2px solid white;
   color: white;
-
-  height: 45px;
-  width: 191px;
-  border-radius: 81px;
-  margin-top: 65px;
-  margin-right: 12px;
+  border-radius: 7px;
+  height: 42px;
+  width: 161px;
+  margin: 6px 37px;
   background: linear-gradient(45deg, black, transparent);
+  cursor: pointer;
+  border: none;
+  border-top: 2px solid;
+}
+button :hover {
+  background-color: green;
 }
 
 .pointeur {
   cursor: pointer;
+}
+
+.firstColumn {
+  display: flex;
+  flex-direction: column;
+}
+.lastColumn {
+  display: flex;
+  flex-direction: column;
+}
+.mid {
 }

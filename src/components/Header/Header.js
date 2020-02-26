@@ -12,47 +12,54 @@ const Header = props => {
   return (
     <div>
       <div className="Header">
-        <Link to={"/"} className="pointeur">
-          <div>
-            <img className="Logo-Marvel" src={Logo} alt="" />
-          </div>
-        </Link>
         <div className="flex">
-          <Link to={"/personnages"} className="pointeur">
-            <button className="button">Personnage</button>
-          </Link>
-          <Link to={"/comics"} className="pointeur">
-            <button className="button">Comics</button>
-          </Link>
-          <Link to={"/favoris"} className="pointeur">
-            <button className="button">Favoris</button>
-          </Link>
+          <div className="firstColumn">
+            {" "}
+            <Link to={"/personnages"} className="pointeur">
+              <button className="button">Characters</button>
+            </Link>
+            <Link to={"/comics"} className="pointeur">
+              <button className="button">Comics</button>
+            </Link>
+          </div>
 
-          <div className="connectButton" className="pointeur">
-            {props.user === null ? (
-              <Link to={"/Log_in"} className="pointeur">
-                <button className="button">Se connecter</button>
+          <div className="mid">
+            {" "}
+            <Link to={"/"} className="pointeur">
+              <div>
+                <img className="Logo-Marvel" src={Logo} alt="" />
+              </div>
+            </Link>
+          </div>
+
+          <div className="lastColumn">
+            <div>
+              <Link to={"/favorites"} className="pointeur">
+                <button className="button">Favorites</button>
               </Link>
-            ) : (
-              <button
-                className="button"
-                onClick={() => {
-                  Cookies.remove("userToken");
+            </div>{" "}
+            <div className="connectButton" className="pointeur">
+              {props.user === null ? (
+                <Link to={"/Log_in"} className="pointeur">
+                  <button className="button">Log in</button>
+                </Link>
+              ) : (
+                <button
+                  className="button"
+                  onClick={() => {
+                    Cookies.remove("userToken");
+                    Cookies.remove("userId");
 
-                  props.setUser(null);
-                  history.push("/");
-                }}
-              >
-                Se déconnecter
-              </button>
-            )}
+                    props.setUser(null);
+                    history.push("/");
+                  }}
+                >
+                  Sign out
+                </button>
+              )}
+            </div>
           </div>
         </div>
-        <Link to={"/"} className="pointeur">
-          <div>
-            <img className="Logo-Marvel" src={Logo} alt="" />
-          </div>
-        </Link>
       </div>
     </div>
   );

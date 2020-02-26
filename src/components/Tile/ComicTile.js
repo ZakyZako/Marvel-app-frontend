@@ -8,7 +8,7 @@ const CharacterTile = props => {
         <div>
           <h2>{props.title}</h2>
         </div>
-        <div>
+        <div className="comicImg">
           <img src={props.imgPath} alt="logo" />
         </div>
         <div>

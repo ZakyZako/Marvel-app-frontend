@@ -47,7 +47,7 @@ const CharacterList = () => {
               key={index}
               imgPath={character.imgPath}
               name={character.name}
-              // desc={character.desc}
+              desc={character.desc}
               id={character.id}
             />
           );

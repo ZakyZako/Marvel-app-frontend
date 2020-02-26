@@ -1,11 +1,27 @@
 .home {
-  top: 143px;
+  top: 125px;
   left: -75px;
   right: 0;
   z-index: -1;
   border: 0;
   height: 100vh;
   position: fixed;
-  background: url("../images/wallpaper.jpg");
+  background: url("../images/homee.jpg");
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.titleHome {
+  color: red;
+  position: absolute;
+  right: 34%;
+  top: 13%;
+  font-weight: 800;
+  font-size: 32px;
+}
+
+button:hover {
+  background-color: red;
 }

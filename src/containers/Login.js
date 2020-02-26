@@ -26,6 +26,7 @@ const Login = props => {
         console.log("idddddD", id);
         Cookies.set("userId", id);
         Cookies.set("userToken", token, { expires: 10 });
+        console.log("token", token);
         props.setUser({ token: token });
         history.push("/");
       } else {
@@ -38,6 +39,14 @@ const Login = props => {
 
   return (
     <div className="formCenter">
+      <div className="containerEnTete">
+        <div className="enTete">EN TETE</div>
+        <div className="spanLogin">
+          <span>JOINS US!</span>
+        </div>
+        <div className="enTable">BONJOUR</div>
+      </div>
+
       <div className="LoginForm">
         <form
           className="form"

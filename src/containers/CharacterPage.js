@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import CharacterComicsList from "../components/CharacterComics/CharacterComicsList";
+import "./characterPage.css";
 
 const CharacterPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,17 +25,20 @@ const CharacterPage = () => {
       {isLoading === true ? (
         <p> En cours de chargement</p>
       ) : (
-        <div>
-          <div>{data.name}</div>
+        <div className="containerCharacterPage">
           <div>
-            <img src={data.imgPath} alt="img hero" />
-          </div>
-          <div>
-            <div>
-              <p>{data.desc}</p>
-              <div>
-                <CharacterComicsList data={data.comics} />
+            <div className="imgDescCharacterPage">
+              <img src={data.imgPath} alt="img hero" />
+              <div className="containerNameDesc">
+                {" "}
+                <div className="nameCharacterPage">{data.name}</div>
+                <div className="containerDesc">
+                  <p>{data.desc}</p>
+                </div>
               </div>
+            </div>
+            <div>
+              <CharacterComicsList data={data.comics} />
             </div>
           </div>
         </div>

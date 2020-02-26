@@ -1,3 +1,14 @@
+.backgroundCharacterListCenter {
+  top: 126px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border: 0;
+  height: 100vh;
+  position: fixed;
+  background-image: url("./../images/captain-america.jpg");
+  background-position: center;
+}
 .backgroundCharacterList {
   position: relative;
 }
@@ -44,16 +55,4 @@
 h4 {
   color: #1b2936;
   margin-top: 36px;
-}
-
-.backgroundCharacterListCenter {
-  top: 143px;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  border: 0;
-  height: 100vh;
-  position: fixed;
-  background-image: url("./../images/captain-america.jpg");
-  background-position: center;
 }

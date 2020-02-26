@@ -11,14 +11,11 @@ const CharacterTile = props => {
         style={{ textDecoration: "none" }}
       >
         <div className="characterTile">
-          <div>
-            <h4>{props.name}</h4>
-          </div>
-          <div>
+          <div className="characterImg">
             <img src={props.imgPath} alt="imgThor" />
           </div>
-          <div>
-            {" "}
+          <div className="characterName">
+            <h4>{props.name}</h4>
             <p>{props.desc}</p>
           </div>
         </div>

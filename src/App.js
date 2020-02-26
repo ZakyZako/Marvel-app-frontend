@@ -41,7 +41,7 @@ function App() {
         <Route path={"/comics"}>
           <ComicsList />
         </Route>
-        <Route path={"/favoris"}>
+        <Route path={"/favorites"}>
           <FavoriteList />
         </Route>
         <Route path={"/"}>
